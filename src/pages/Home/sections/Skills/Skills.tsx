@@ -1,10 +1,11 @@
 import { Box, Typography, styled, Grid } from "@mui/material";
 import { DiNodejs, DiReact, DiHtml5, DiJava, DiGit, DiJavascript1, DiDatabase } from "react-icons/di";
 import { SiCsharp } from "react-icons/si";
+
 const Skills = () => {
     const StyledSkills = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
-        minHeight: "50vh",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -13,6 +14,15 @@ const Skills = () => {
         boxSizing: "border-box",
     }));
 
+    const IconWrapper = styled(Box)({
+        transition: 'transform 0.2s ease-in-out',
+        '&:hover': {
+            transform: 'scale(1.1)',
+            backgroundColor: "#acec98",
+            borderRadius: "10%"
+        },
+    });
+
     return (
         <Box id="skills">
             <StyledSkills>
@@ -20,30 +30,45 @@ const Skills = () => {
                     Habilidades
                 </Typography>
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
-                    { }
-                    <Grid item xs={6} sm={4} md={2} lg={3} >
-                        <DiNodejs size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiNodejs size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <DiReact size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiReact size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <DiHtml5 size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiHtml5 size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <SiCsharp size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <SiCsharp size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <DiJava size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiJava size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <DiGit size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiGit size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <DiJavascript1 size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiJavascript1 size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2} lg={3}>
-                        <DiDatabase size={80} color="#fff" />
+                    <Grid item xs={6} sm={4} md={2} lg={3} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IconWrapper>
+                            <DiDatabase size={80} color="#fff" />
+                        </IconWrapper>
                     </Grid>
                 </Grid>
             </StyledSkills>
