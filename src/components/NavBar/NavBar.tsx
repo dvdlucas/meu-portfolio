@@ -1,4 +1,6 @@
-import { AppBar, Toolbar, MenuItem, styled } from "@mui/material";
+import { AppBar, Toolbar, MenuItem, styled, Box, List, ListItem, ListItemText, IconButton, Drawer } from "@mui/material";
+import React, { useState } from "react";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     display: "flex",
@@ -22,6 +24,15 @@ const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
 }));
 
 const NavBar = () => {
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+        if (event.type === 'keydown' && ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')) {
+            return;
+        }
+        setIsDrawerOpen(open);
+    };
+
     const handleScroll = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -29,12 +40,51 @@ const NavBar = () => {
         }
     };
 
+    const list = () => (
+        <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={toggleDrawer(false)}
+            onKeyDown={toggleDrawer(false)}
+        >
+            <List>
+                <ListItem button onClick={() => handleScroll('about')}>
+                    <ListItemText primary="Sobre" />
+                </ListItem>
+                <ListItem button onClick={() => handleScroll('skills')}>
+                    <ListItemText primary="Habilidades" />
+                </ListItem>
+                <ListItem button onClick={() => handleScroll('projects')}>
+                    <ListItemText primary="Projetos" />
+                </ListItem>
+            </List>
+        </Box>
+    );
+
     return (
         <AppBar position="absolute">
             <StyledToolbar>
-                <StyledMenuItem onClick={() => handleScroll('about')}>Sobre</StyledMenuItem>
-                <StyledMenuItem onClick={() => handleScroll('skills')}>Habilidades</StyledMenuItem>
-                <StyledMenuItem onClick={() => handleScroll('projects')}>Projetos</StyledMenuItem>
+                <IconButton
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={toggleDrawer(true)}
+                    sx={{ display: { xs: 'block', md: 'none' } }}
+                >
+                    <MenuIcon />
+                </IconButton>
+                <Drawer
+                    anchor="left"
+                    open={isDrawerOpen}
+                    onClose={toggleDrawer(false)}
+                >
+                    {list()}
+                </Drawer>
+                <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: "space-evenly", width: '100%' }}>
+                    <StyledMenuItem onClick={() => handleScroll('about')}>Sobre</StyledMenuItem>
+                    <StyledMenuItem onClick={() => handleScroll('skills')}>Habilidades</StyledMenuItem>
+                    <StyledMenuItem onClick={() => handleScroll('projects')}>Projetos</StyledMenuItem>
+                </Box>
             </StyledToolbar>
         </AppBar>
     );
