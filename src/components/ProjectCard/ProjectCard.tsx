@@ -14,6 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description,
         color: theme.palette.primary.contrastText,
         borderRadius: theme.shape.borderRadius,
         padding: theme.spacing(2),
+        height: "100%",
     }));
 
     const StyledTechnologies = styled(Typography)(({ theme }) => ({
@@ -28,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description,
             <Grid container spacing={2} alignItems="center">
 
                 <Grid item xs={12}>
-                    <Typography variant="h5" align="center" gutterBottom>
+                    <Typography variant="h4" align="center" gutterBottom>
                         {title}
                     </Typography>
                     <Grid item xs={12}>
