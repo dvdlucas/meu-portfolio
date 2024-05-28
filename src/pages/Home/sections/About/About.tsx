@@ -48,7 +48,7 @@ const About = () => {
             </Grid>
             <Typography color="primary.main" variant="body1" textAlign="left" marginTop={4}>
                 Profissional com sólida experiência em SQL, C# .NET e versionamento de código utilizando GIT.
-                Atualmente, atuo na criação de novas features e correções de bugs, realizando análises de cenários e oferecendo soluções eficazes para problemas complexos.
+                Atualmente, atuo na criação de novas features e correções de bugs, realizando análises de cenários e oferecendo soluções eficazes.
                 Recentemente estou expandindo meus conhecimentos em React, JavaScript e Node.js por meio de projetos pessoais.
                 Meu foco principal é o desenvolvimento Backend, com ênfase na criação de APIs e sistemas altamente funcionais e escaláveis.
                 Com um compromisso contínuo com a melhoria e inovação, busco sempre entregar soluções que agreguem valor e impulsionem os objetivos da empresa.

@@ -21,7 +21,7 @@ const Projects = () => {
                         <ProjectCard
                             title="Site Imobiliária LSilva"
                             imageSrc={ImageLSilva}
-                            description="O projeto consiste em uma plataforma web dedicada a oferecer uma experiência intuitiva e abrangente para clientes específicos em propriedades nas regiões de São Roque, Ibiúna, Mairinque e Alumínio. Com um foco especial nessas localidades, a plataforma fornecerá aos usuários uma visão detalhada e atrativa das propriedades disponíveis, facilitando a busca por residências, terrenos ou investimentos."
+                            description="O projeto consiste em uma plataforma web dedicada a oferecer uma experiência intuitiva e abrangente para clientes que pretendem adquirir propriedades nas regiões de São Roque, Ibiúna, Mairinque e Alumínio. Com um foco especial nessas localidades, a plataforma fornecerá aos usuários uma visão detalhada e atrativa das propriedades disponíveis, facilitando a busca por residências, terrenos ou investimentos."
                             tecnologias="Tecnologias : Html, CSS, JavaScript, NodeJs, MySQL"
                         />
                     </Grid>
