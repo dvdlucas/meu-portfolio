@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import React, { useState, useEffect } from "react";
 
 const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -25,7 +26,31 @@ const StyledImg = styled("img")(({ theme }) => ({
     border: `1px solid ${theme.palette.primary.contrastText}`,
 }));
 
+const BlinkingText = styled("span")({
+    animation: "blink 1s infinite",
+    "@keyframes blink": {
+        "0%": { opacity: 1 },
+        "50%": { opacity: 0 },
+        "100%": { opacity: 1 },
+    },
+});
+
 const Hero = () => {
+    const words = ["Desenvolvedor FullStack"];
+    const [textIndex, setTextIndex] = useState(0);
+    const [currentText, setCurrentText] = useState("");
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentText((prevText) => {
+                const nextTextIndex = (textIndex + 1) % words.length;
+                return words[nextTextIndex].substring(0, prevText.length + 1);
+            });
+        }, 150);
+
+        return () => clearInterval(intervalId);
+    }, [textIndex]);
+
     return (
         <StyledHero>
             <Container maxWidth="lg">
@@ -42,7 +67,13 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>David Lucas</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">Desenvolvedor Web FullStack</Typography>
+                        <Typography color="secondary.main" variant="h2" textAlign="center">
+                            Eu sou{" "}
+                            {currentText}
+                            <BlinkingText>
+                                {" />"}
+                            </BlinkingText>
+                        </Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={3} display="flex" justifyContent="center">
                                 <StyledButton onClick={() => window.open("https://linkedin.com/in/david-lucas-devfullstack/", "_blank")}>
