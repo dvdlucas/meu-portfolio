@@ -1,12 +1,13 @@
 import { Box, Typography, styled, Grid } from "@mui/material";
 import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
-
+import ImageLSilva from "../../../../assets/images/Imobi.jpg";
+import ImageApiC from "../../../../assets/images/contatos.jpg";
 
 const Projects = () => {
     const StyledProject = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.contrastText,
-        minHeight: "100vh",
-        padding: "100px 20px",
+        minHeight: "80vh",
+        padding: "100px 50px",
     }));
 
     return (
@@ -16,20 +17,20 @@ const Projects = () => {
                     Projetos
                 </Typography>
                 <Grid container spacing={3} justifyContent="center">
-                    {/* Projeto 1 */}
                     <Grid item xs={12} md={6}>
                         <ProjectCard
-                            title="Nome do Projeto 1"
-                            imageSrc="/path/to/project1-image.jpg"
-                            description="Descrição do Projeto 1"
+                            title="Site Imobiliária LSilva"
+                            imageSrc={ImageLSilva}
+                            description="O projeto consiste em uma plataforma web dedicada a oferecer uma experiência intuitiva e abrangente para clientes específicos em propriedades nas regiões de São Roque, Ibiúna, Mairinque e Alumínio. Com um foco especial nessas localidades, a plataforma fornecerá aos usuários uma visão detalhada e atrativa das propriedades disponíveis, facilitando a busca por residências, terrenos ou investimentos."
+                            tecnologias="Tecnologias : Html, CSS, JavaScript, NodeJs, MySQL"
                         />
                     </Grid>
-                    {/* Projeto 2 */}
                     <Grid item xs={12} md={6}>
                         <ProjectCard
-                            title="Nome do Projeto 2"
-                            imageSrc="/path/to/project2-image.jpg"
-                            description="Descrição do Projeto 2"
+                            title="Sistemas de Contatos"
+                            imageSrc={ImageApiC}
+                            description="Sistema de controle de contatos, o usuário administrador pode cadastrar novos usuários ou excluir os que eles já possui, funciona como se fosse uma agenda."
+                            tecnologias="Tecnologias : C# .NET , Hibernate, SQLServer"
                         />
                     </Grid>
                 </Grid>
