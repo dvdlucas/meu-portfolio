@@ -5,7 +5,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 
 const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -37,7 +38,7 @@ const BlinkingText = styled("span")({
 
 const Hero = () => {
     const words = ["Desenvolvedor FullStack"];
-    const [textIndex, setTextIndex] = useState(0);
+    const [textIndex] = useState(0);
     const [currentText, setCurrentText] = useState("");
 
     useEffect(() => {
