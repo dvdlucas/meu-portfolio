@@ -29,7 +29,7 @@ const About = () => {
                 Sobre mim
             </Typography>
             <Grid container spacing={2} justifyContent="center">
-                <Grid item xs={12} sm="auto">
+                <Grid item xs={8} sm="auto">
                     <InfoBox>
                         <EmojiEventsIcon fontSize="large" color="secondary" />
                         <Typography variant="h6" fontWeight="bold">Experiências</Typography>
@@ -37,7 +37,7 @@ const About = () => {
                         <Typography variant="body2">Desenvolvedor FullStack - Docknox</Typography>
                     </InfoBox>
                 </Grid>
-                <Grid item xs={12} sm="auto">
+                <Grid item xs={8} sm="auto">
                     <InfoBox>
                         <SchoolIcon fontSize="large" color="secondary" />
                         <Typography variant="h6" fontWeight="bold">Educação</Typography>
