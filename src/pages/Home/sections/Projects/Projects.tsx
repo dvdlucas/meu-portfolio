@@ -29,7 +29,8 @@ const Projects = () => {
                         <ProjectCard
                             title="Sistemas de Contatos"
                             imageSrc={ImageApiC}
-                            description="Sistema de controle de contatos, o usuário administrador pode cadastrar novos usuários ou excluir os que eles já possui, funciona como se fosse uma agenda."
+                            description="Este projeto é uma aplicação completa para o gerenciamento de contatos, oferecendo uma interface intuitiva e fácil de usar para administradores. Com este sistema, os administradores podem adicionar novos contatos e excluir contatos existentes
+                             A funcionalidade do sistema é comparável a uma agenda digital, proporcionando um meio centralizado e eficiente de gerenciar uma lista de contatos de forma estruturada e segura."
                             tecnologias="Tecnologias : C# .NET , Hibernate, SQLServer"
                         />
                     </Grid>
