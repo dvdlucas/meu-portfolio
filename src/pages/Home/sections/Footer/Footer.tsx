@@ -37,7 +37,7 @@ const Footer = () => {
                 <IconLink href="https://github.com/dvdlucas" target="_blank" rel="noopener noreferrer">
                     <GitHubIcon fontSize="large" />
                 </IconLink>
-                <IconLink href="https://wa.me/015996353517" target="_blank" rel="noopener noreferrer">
+                <IconLink href="https://wa.me/5515996353517" target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon fontSize="large" />
                 </IconLink>
             </IconWrapper>

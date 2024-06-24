@@ -89,7 +89,7 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => window.open("https://wa.me/015996353517", "_blank")}>
+                                <StyledButton onClick={() => window.open("https://wa.me/5515996353517", "_blank")}>
                                     <WhatsAppIcon />
                                     <Typography>WhatsApp</Typography>
                                 </StyledButton>
