@@ -1,10 +1,10 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
-import Avatar from "../../../../assets/images/Tamires & David-418.jpg";
+import Avatar from "@assets/images/Tamires & David-418.jpg";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import StyledButton from "../../../../components/StyledButton/StyledButton";
-import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import StyledButton from "@components/StyledButton/StyledButton";
+import { AnimatedBackground } from "@components/AnimatedBackground/AnimatedBackground";
 import { useEffect, useState } from "react";
 
 

@@ -1,8 +1,8 @@
 import { Box, Typography, styled, Grid } from "@mui/material";
-import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
-import ImageLSilva from "../../../../assets/images/Imobi.jpg";
-import ImageApiC from "../../../../assets/images/contatos.jpg";
-import ImageTodoList from "../../../../assets/images/Todlist.jpg"
+import ProjectCard from "@components/ProjectCard/ProjectCard";
+import ImageLSilva from "@assets/images/Imobi.jpg";
+import ImageApiC from "@assets/images/contatos.jpg";
+import ImageTodoList from "@assets/images/Todlist.jpg"
 
 const Projects = () => {
     const StyledProject = styled("div")(({ theme }) => ({
