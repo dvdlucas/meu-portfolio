@@ -1,14 +1,14 @@
 import { Box, Typography, styled, Grid } from "@mui/material";
 
-
 interface ProjectCardProps {
     imageSrc: string;
     title: string;
     description: string;
     tecnologias: string;
+    link: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description, tecnologias }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description, tecnologias, link }) => {
     const StyledProjectCard = styled(Box)(({ theme }) => ({
         backgroundColor: theme.palette.primary.contrastText,
         color: theme.palette.primary.main,
@@ -25,7 +25,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description,
         borderRadius: '5px',
         textAlign: 'center',
     }));
-
 
     const StyledButtonWithBorder = styled("button")(({ theme }) => ({
         position: "absolute",
@@ -50,7 +49,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description,
     return (
         <StyledProjectCard>
             <Grid container spacing={2} alignItems="center">
-
                 <Grid item xs={12}>
                     <Typography variant="h4" align="center" gutterBottom fontWeight="bold">
                         {title}
@@ -77,7 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imageSrc, title, description,
                 </Grid>
                 */}
                 <Grid item xs={12}>
-                    <StyledButtonWithBorder onClick={() => window.open("https://github.com/dvdlucas", "_blank")}>
+                    <StyledButtonWithBorder onClick={() => window.open(link, "_blank")}>
                         GitHub
                     </StyledButtonWithBorder>
                 </Grid>
