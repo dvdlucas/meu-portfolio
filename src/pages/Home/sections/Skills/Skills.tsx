@@ -10,7 +10,7 @@ const Skills = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "40px",
+        padding: "20px",
         boxSizing: "border-box",
     }));
 

@@ -10,7 +10,7 @@ const About = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "30px 100px",
+        padding: "30px 75px",
         boxSizing: "border-box",
     }));
 

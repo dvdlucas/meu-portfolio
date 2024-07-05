@@ -8,7 +8,7 @@ const Projects = () => {
     const StyledProject = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.contrastText,
         minHeight: "80vh",
-        padding: "100px 100px",
+        padding: "100px 75px",
     }));
 
     return (
@@ -18,7 +18,7 @@ const Projects = () => {
                     Projetos
                 </Typography>
                 <Grid container spacing={3} justifyContent="center">
-                    <Grid item xs={8} md={4}>
+                    <Grid item xs={12} md={6}>
                         <ProjectCard
                             title="Site Imobiliária LSilva"
                             imageSrc={ImageLSilva}
@@ -27,7 +27,7 @@ const Projects = () => {
                             link="https://github.com/yVinii/SiteImobi"
                         />
                     </Grid>
-                    <Grid item xs={8} md={4}>
+                    <Grid item xs={12} md={6}>
                         <ProjectCard
                             title="Sistemas de Contatos"
                             imageSrc={ImageApiC}
@@ -36,7 +36,7 @@ const Projects = () => {
                             link="https://github.com/dvdlucas/Projeto-Contatos"
                         />
                     </Grid>
-                    <Grid item xs={8} md={4}>
+                    <Grid item xs={12} md={6}>
                         <ProjectCard
                             title="Lista de Tarefas"
                             imageSrc={ImageTodoList}
