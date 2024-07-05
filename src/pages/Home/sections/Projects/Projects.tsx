@@ -1,7 +1,7 @@
 import { Box, Typography, styled, Grid } from "@mui/material";
 import ProjectCard from "@components/ProjectCard/ProjectCard";
 import ImageLSilva from "@assets/images/Imobi.jpg";
-import ImageApiC from "@assets/images/contatos2.jpg";
+import ImageApiC from "@assets/images/Contatos2.jpg";
 import ImageTodoList from "@assets/images/Todlist.jpg"
 
 const Projects = () => {
