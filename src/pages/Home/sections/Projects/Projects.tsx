@@ -2,7 +2,8 @@ import { Box, Typography, styled, Grid } from "@mui/material";
 import ProjectCard from "@components/ProjectCard/ProjectCard";
 import ImageLSilva from "@assets/images/Imobi.jpg";
 import ImageApiC from "@assets/images/Contatos.jpg";
-import ImageTodoList from "@assets/images/Todlist.jpg"
+import ImageTodoList from "@assets/images/Todlist.jpg";
+import ImageBlog from "@assets/images/post.jpg";
 
 const Projects = () => {
     const StyledProject = styled("div")(({ theme }) => ({
@@ -43,6 +44,15 @@ const Projects = () => {
                             description="Este projeto é uma ferramenta poderosa e intuitiva para a gestão de tarefas, desenvolvida para facilitar o cadastro, edição e exclusão de atividades. Com ele, é possível classificar tarefas por prioridade e adicionar descrições detalhadas, além de marcar tarefas como concluídas. Ideal para otimizar a gestão de tempo, organização e definição de prioridades, este sistema é uma excelente solução para melhorar a produtividade e garantir que todas as tarefas sejam gerenciadas de forma eficiente."
                             tecnologias="Tecnologias : NodeJs , HTML CSS, JavaScript, Handlebars, SQLlite"
                             link="https://lista-de-tarefas-v4ij.onrender.com/"
+                        />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <ProjectCard
+                            title="TechBlog"
+                            imageSrc={ImageBlog}
+                            description="O TechBlog é um projeto completo de site de postagens onde os usuários podem se registrar, fazer login, criar, editar e excluir posts. Utilizando Node.js, Express, Handlebars, HTML, CSS e Sequelize com MySQL, o projeto oferece uma experiência de usuário rica e dinâmica com gerenciamento de sessões e mensagens flash para feedback instantâneo."
+                            tecnologias="Tecnologias : NodeJs , HTML CSS, JavaScript, Handlebars, MySQL"
+                            link="https://github.com/dvdlucas/TechBlog"
                         />
                     </Grid>
                 </Grid>
