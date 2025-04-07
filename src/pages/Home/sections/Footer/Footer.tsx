@@ -31,7 +31,7 @@ const Footer = () => {
     return (
         <StyledFooter>
             <IconWrapper>
-                <IconLink href="https://linkedin.com/in/david-lucas-devfullstack/" target="_blank" rel="noopener noreferrer">
+                <IconLink href="https://linkedin.com/in/david-lucas-devbackend/" target="_blank" rel="noopener noreferrer">
                     <LinkedInIcon fontSize="large" />
                 </IconLink>
                 <IconLink href="https://github.com/dvdlucas" target="_blank" rel="noopener noreferrer">

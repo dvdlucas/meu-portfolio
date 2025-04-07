@@ -37,7 +37,7 @@ const BlinkingText = styled("span")({
 });
 
 const Hero = () => {
-    const words = ["Desenvolvedor FullStack"];
+    const words = ["Desenvolvedor Backend"];
     const [textIndex] = useState(0);
     const [currentText, setCurrentText] = useState("");
 
@@ -77,7 +77,7 @@ const Hero = () => {
                         </Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={3} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => window.open("https://linkedin.com/in/david-lucas-devfullstack/", "_blank")}>
+                                <StyledButton onClick={() => window.open("https://linkedin.com/in/david-lucas-devbackend/", "_blank")}>
                                     <LinkedInIcon />
                                     <Typography>LinkedIn</Typography>
                                 </StyledButton>

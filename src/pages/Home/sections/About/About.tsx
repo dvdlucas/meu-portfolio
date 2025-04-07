@@ -33,8 +33,8 @@ const About = () => {
                     <InfoBox>
                         <EmojiEventsIcon fontSize="large" color="secondary" />
                         <Typography variant="h6" fontWeight="bold">Experiências</Typography>
-                        <Typography variant="body2">1+ ano</Typography>
-                        <Typography variant="body2">Desenvolvedor FullStack - Docknox</Typography>
+                        <Typography variant="body2">2 anos</Typography>
+                        <Typography variant="body2">Desenvolvedor Backend - Docknox</Typography>
                     </InfoBox>
                 </Grid>
                 <Grid item xs={8} sm="auto">
